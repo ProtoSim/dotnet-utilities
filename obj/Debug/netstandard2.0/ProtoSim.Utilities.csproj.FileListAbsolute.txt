@@ -1,0 +1,9 @@
+C:\Users\roman\source\repos\ProtoSim.Utilities\obj\Debug\netstandard2.0\ProtoSim.Utilities.csprojAssemblyReference.cache
+C:\Users\roman\source\repos\ProtoSim.Utilities\obj\Debug\netstandard2.0\ProtoSim.Utilities.AssemblyInfoInputs.cache
+C:\Users\roman\source\repos\ProtoSim.Utilities\obj\Debug\netstandard2.0\ProtoSim.Utilities.AssemblyInfo.cs
+C:\Users\roman\source\repos\ProtoSim.Utilities\obj\Debug\netstandard2.0\ProtoSim.Utilities.csproj.CoreCompileInputs.cache
+C:\Users\roman\source\repos\ProtoSim.Utilities\obj\Debug\netstandard2.0\ProtoSim.Utilities.dll
+C:\Users\roman\source\repos\ProtoSim.Utilities\obj\Debug\netstandard2.0\ProtoSim.Utilities.pdb
+D:\Local\NuGet\netstandard2.0\ProtoSim.Utilities.deps.json
+D:\Local\NuGet\netstandard2.0\ProtoSim.Utilities.dll
+D:\Local\NuGet\netstandard2.0\ProtoSim.Utilities.pdb

@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "ZHG8Y/5ZpUbeDwYZ4gQnHx908OIRN0z3LZptuAYTahWETKa+IXYcPvxDRhqUf+vGcmx5WNWnmB1GScSZRreWWQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\roman\\source\\repos\\ProtoSim.Utilities\\ProtoSim.Utilities.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\roman\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\roman\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}
