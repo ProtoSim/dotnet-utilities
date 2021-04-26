@@ -3,13 +3,13 @@
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-    <Version>0.0.1</Version>
+    <Version>0.1.1</Version>
     <Authors>Sebastian Romanet</Authors>
     <Company>ProtoSim</Company>
     <Product />
     <Description>A .NET Standard 2.0 class library that adds some extra utility to .NET</Description>
     <PackageLicenseFile>GNU GENERAL PUBLIC LICENSE.txt</PackageLicenseFile>
-    <PackageProjectUrl>https://github.com/ProtoSim/dotnet-utilities</PackageProjectUrl>
+    <PackageProjectUrl></PackageProjectUrl>
     <RepositoryUrl>https://github.com/ProtoSim/dotnet-utilities</RepositoryUrl>
     <RepositoryType>GitHub</RepositoryType>
   </PropertyGroup>
