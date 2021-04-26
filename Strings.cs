@@ -1,6 +1,6 @@
 ﻿using System.Text.RegularExpressions;
 
-namespace ProtoSim.Utilities {
+namespace ProtoSim.DotNetUtilities {
     public static class Strings {
         public static bool IsValidGuid(this string guid) {
             if (string.IsNullOrEmpty(guid))

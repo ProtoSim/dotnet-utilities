@@ -185,11 +185,11 @@
     "C:\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
-    "version": "0.1.1",
+    "version": "0.2.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\roman\\source\\repos\\dotnet-utilities\\ProtoSim.Utilities.csproj",
-      "projectName": "ProtoSim.Utilities",
-      "projectPath": "C:\\Users\\roman\\source\\repos\\dotnet-utilities\\ProtoSim.Utilities.csproj",
+      "projectUniqueName": "C:\\Users\\roman\\source\\repos\\dotnet-utilities\\ProtoSim.DotNetUtilities.csproj",
+      "projectName": "ProtoSim.DotNetUtilities",
+      "projectPath": "C:\\Users\\roman\\source\\repos\\dotnet-utilities\\ProtoSim.DotNetUtilities.csproj",
       "packagesPath": "C:\\Users\\roman\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\roman\\source\\repos\\dotnet-utilities\\obj\\",
       "projectStyle": "PackageReference",
