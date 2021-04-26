@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>ProtoSim.DotNetUtilities</id>
+    <version>0.2.0</version>
+    <authors>Sebastian Romanet</authors>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <license type="file">GNU GENERAL PUBLIC LICENSE.txt</license>
+    <licenseUrl>https://aka.ms/deprecateLicenseUrl</licenseUrl>
+    <description>A .NET Standard 2.0 class library that adds some extra utility to .NET</description>
+    <repository type="GitHub" url="https://github.com/ProtoSim/dotnet-utilities" />
+    <dependencies>
+      <group targetFramework=".NETStandard2.0" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="C:\Users\roman\source\repos\dotnet-utilities\bin\Release\netstandard2.0\ProtoSim.DotNetUtilities.dll" target="lib\netstandard2.0\ProtoSim.DotNetUtilities.dll" />
+    <file src="C:\Users\roman\source\repos\dotnet-utilities\GNU GENERAL PUBLIC LICENSE.txt" target="GNU GENERAL PUBLIC LICENSE.txt" />
+  </files>
+</package>
