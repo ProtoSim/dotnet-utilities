@@ -1,6 +1,9 @@
 ﻿using System.Text.RegularExpressions;
 
 namespace ProtoSim.DotNetUtilities {
+    /// <summary>
+    /// Contains extension methods for the string Type, adding functionality
+    /// </summary>
     public static class Strings {
         /// <summary>
         /// Checks the given string to determine if it is a valid email address value
