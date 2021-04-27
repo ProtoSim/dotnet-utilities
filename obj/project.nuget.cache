@@ -1,8 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "gw9wBHO2fA94Hzc8dzJXKyU1K8TPBtpsbhpvH+dn1Lp5eGVvE2T9khHPcrck+9R/C+IAJm0QkNVpbHhbbfvWhg==",
+  "dgSpecHash": "pjgVZBX0pJvNq/G9pVOYtOXldU+c6voaeI0Mgev4LisUzBqangN1ut46x8LiEb0zfd4XZ0utvDt6URi/DtoViw==",
   "success": true,
   "projectFilePath": "C:\\Users\\roman\\source\\repos\\dotnet-utilities\\ProtoSim.DotNetUtilities.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\roman\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\roman\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+  ],
   "logs": []
 }

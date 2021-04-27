@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Collections;
+using System.Collections.Generic;
 using System.Text.RegularExpressions;
 
 namespace ProtoSim.DotNetUtilities {
@@ -30,6 +32,36 @@ namespace ProtoSim.DotNetUtilities {
                 return false;
 
             return Regex.IsMatch(guid, @"\w{8}-(\w{4}-){3}\w{12}");
+        }
+
+        /// <summary>
+        /// Converts the given <paramref name="item"/> to a plain string, taking into account its Type
+        /// </summary>
+        /// <remarks>Will return the standard object.ToString() result if unsupported Type</remarks>
+        /// <param name="item">The item to convert</param>
+        /// <returns>A string object representing <paramref name="item"/></returns>
+        public static string ToPlainString(this object item) {
+            if (item == null)
+                return null;
+
+            if (item is IList) {
+                var itemList = item as IList;
+                var plainString = "[";
+
+                for (int i = 0; i < itemList.Count; i++) {
+                    plainString += itemList[i].ToPlainString();
+
+                    if (i < itemList.Count - 1)
+                        plainString += ",";
+                }
+
+                return plainString + "]";
+            }
+
+            switch (item.GetType()) {
+                default:
+                    return item.ToString();
+            }
         }
     }
 }
