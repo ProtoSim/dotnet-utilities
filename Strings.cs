@@ -1,4 +1,5 @@
-﻿using System.Text.RegularExpressions;
+﻿using System;
+using System.Text.RegularExpressions;
 
 namespace ProtoSim.DotNetUtilities {
     /// <summary>
@@ -10,7 +11,7 @@ namespace ProtoSim.DotNetUtilities {
         /// </summary>
         /// <remarks>A NULL string object will return False</remarks>
         /// <param name="emailAddress">The string value to check</param>
-        /// <returns>returns True if valid or False if invalid</returns>
+        /// <returns>True if valid or False if invalid</returns>
         public static bool IsValidEmailAddress(this string emailAddress) {
             if (string.IsNullOrEmpty(emailAddress))
                 return false;
@@ -23,7 +24,7 @@ namespace ProtoSim.DotNetUtilities {
         /// </summary>
         /// <remarks>A NULL string object will return False</remarks>
         /// <param name="guid">The string value to check</param>
-        /// <returns>returns True if valid or False if invalid</returns>
+        /// <returns>True if valid or False if invalid</returns>
         public static bool IsValidGuid(this string guid) {
             if (string.IsNullOrEmpty(guid))
                 return false;
