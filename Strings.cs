@@ -9,7 +9,7 @@ namespace ProtoSim.DotNetUtilities {
     /// </summary>
     public static class Strings {
         /// <summary>
-        /// Checks the given string to determine if it is a valid email address value
+        /// Checks if <paramref name="emailAddress"/> is a valid email address value
         /// </summary>
         /// <remarks>A NULL string object will return False</remarks>
         /// <param name="emailAddress">The string value to check</param>
@@ -22,7 +22,7 @@ namespace ProtoSim.DotNetUtilities {
         }
 
         /// <summary>
-        /// Checks the given string to determine if it is a valid Guid value
+        /// Checks if <paramref name="guid"/> is a valid Guid value
         /// </summary>
         /// <remarks>A NULL string object will return False</remarks>
         /// <param name="guid">The string value to check</param>
