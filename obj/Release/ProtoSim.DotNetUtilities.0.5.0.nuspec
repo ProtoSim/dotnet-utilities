@@ -10,7 +10,9 @@
     <description>A .NET Standard 2.0 class library that adds some extra utility to .NET</description>
     <repository type="GitHub" url="https://github.com/ProtoSim/dotnet-utilities" />
     <dependencies>
-      <group targetFramework=".NETStandard2.0" />
+      <group targetFramework=".NETStandard2.0">
+        <dependency id="System.Numerics.Vectors" version="4.5.0" exclude="Build,Analyzers" />
+      </group>
     </dependencies>
   </metadata>
   <files>

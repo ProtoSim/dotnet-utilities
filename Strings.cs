@@ -1,4 +1,5 @@
 ﻿using System.Collections;
+using System.Numerics;
 using System.Text.RegularExpressions;
 
 namespace ProtoSim.DotNetUtilities {
@@ -37,8 +38,9 @@ namespace ProtoSim.DotNetUtilities {
         /// </summary>
         /// <remarks>Will return the standard object.ToString() result if unsupported Type</remarks>
         /// <param name="item">The item to convert</param>
+        /// <param name="parenthesesInsteadOfCarets">Use parentheses instead of carets for applicable Types</param>
         /// <returns>A string object representing <paramref name="item"/></returns>
-        public static string ToPlainString(this object item) {
+        public static string ToPlainString(this object item, bool parenthesesInsteadOfCarets = false) {
             if (item == null)
                 return null;
 
@@ -56,7 +58,10 @@ namespace ProtoSim.DotNetUtilities {
                 return plainString + "]";
             }
 
-            switch (item.GetType()) {
+            switch (item) {
+                case Vector3 vector3:
+                    return $"{(parenthesesInsteadOfCarets ? "(" : "<")}{vector3.X},{vector3.Y},{vector3.Z}{(parenthesesInsteadOfCarets ? ")" : ">")}";
+
                 default:
                     return item.ToString();
             }
