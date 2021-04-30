@@ -1,0 +1,76 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ProtoSim.DotNetUtilities</name>
+    </assembly>
+    <members>
+        <member name="T:ProtoSim.DotNetUtilities.Math">
+            <summary>
+            Contains extension methods for doing mathematical functions
+            </summary>
+        </member>
+        <member name="M:ProtoSim.DotNetUtilities.Math.Map(System.Byte,System.Byte,System.Byte,System.Byte,System.Byte)">
+            <summary>
+            Maps <c>byte</c> <paramref name="value"/> from one <c>byte</c> range (<paramref name="fromMin"/> - <paramref name="fromMax"/>) to another <c>byte</c> range (<paramref name="toMin"/> - <paramref name="toMax"/>)
+            </summary>
+            <param name="value">The <c>byte</c> value to map</param>
+            <param name="fromMin">Low <c>byte</c> value for original range</param>
+            <param name="fromMax">High <c>byte</c> value for original range</param>
+            <param name="toMin">Low <c>byte</c> value for new range</param>
+            <param name="toMax">High <c>byte</c> value for new range</param>
+            <returns>A <c>decimal</c> respresenting the mapped value</returns>
+        </member>
+        <member name="M:ProtoSim.DotNetUtilities.Math.Map(System.Single,System.Single,System.Single,System.Single,System.Single)">
+            <summary>
+            Maps <c>float</c> <paramref name="value"/> from one <c>float</c> range (<paramref name="fromMin"/> - <paramref name="fromMax"/>) to another <c>float</c> range (<paramref name="toMin"/> - <paramref name="toMax"/>)
+            </summary>
+            <param name="value">The <c>float</c> value to map</param>
+            <param name="fromMin">Low <c>float</c> value for original range</param>
+            <param name="fromMax">High <c>float</c> value for original range</param>
+            <param name="toMin">Low <c>float</c> value for new range</param>
+            <param name="toMax">High <c>float</c> value for new range</param>
+            <returns>A <c>decimal</c> respresenting the mapped value</returns>
+        </member>
+        <member name="M:ProtoSim.DotNetUtilities.Math.Map(System.Int32,System.Int32,System.Int32,System.Int32,System.Int32)">
+            <summary>
+            Maps <c>int</c> <paramref name="value"/> from one <c>int</c> range (<paramref name="fromMin"/> - <paramref name="fromMax"/>) to another <c>int</c> range (<paramref name="toMin"/> - <paramref name="toMax"/>)
+            </summary>
+            <param name="value">The <c>int</c> value to map</param>
+            <param name="fromMin">Low <c>int</c> value for original range</param>
+            <param name="fromMax">High <c>int</c> value for original range</param>
+            <param name="toMin">Low <c>int</c> value for new range</param>
+            <param name="toMax">High <c>int</c> value for new range</param>
+            <returns>A <c>decimal</c> respresenting the mapped value</returns>
+        </member>
+        <member name="T:ProtoSim.DotNetUtilities.Strings">
+            <summary>
+            Contains extension methods for the string Type, adding functionality
+            </summary>
+        </member>
+        <member name="M:ProtoSim.DotNetUtilities.Strings.IsValidEmailAddress(System.String)">
+            <summary>
+            Checks if <paramref name="emailAddress"/> is a valid email address value
+            </summary>
+            <remarks>A NULL string object will return False</remarks>
+            <param name="emailAddress">The string value to check</param>
+            <returns>True if valid or False if invalid</returns>
+        </member>
+        <member name="M:ProtoSim.DotNetUtilities.Strings.IsValidGuid(System.String)">
+            <summary>
+            Checks if <paramref name="guid"/> is a valid Guid value
+            </summary>
+            <remarks>A NULL string object will return False</remarks>
+            <param name="guid">The string value to check</param>
+            <returns>True if valid or False if invalid</returns>
+        </member>
+        <member name="M:ProtoSim.DotNetUtilities.Strings.ToPlainString(System.Object,System.Boolean)">
+            <summary>
+            Converts the given <paramref name="item"/> to a plain string, taking into account its Type
+            </summary>
+            <remarks>Will return the standard object.ToString() result if unsupported Type</remarks>
+            <param name="item">The item to convert</param>
+            <param name="parenthesesInsteadOfCarets">Use parentheses instead of carets for applicable Types</param>
+            <returns>A string object representing <paramref name="item"/></returns>
+        </member>
+    </members>
+</doc>

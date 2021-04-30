@@ -3,7 +3,7 @@
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-    <Version>0.6.0</Version>
+    <Version>0.6.2</Version>
     <Authors>Sebastian Romanet</Authors>
     <Company>ProtoSim</Company>
     <Product />
@@ -23,6 +23,7 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
     <OutputPath>D:\Local\NuGet\</OutputPath>
     <PlatformTarget>AnyCPU</PlatformTarget>
+    <DocumentationFile>C:\Users\roman\source\repos\dotnet-utilities\ProtoSim.DotNetUtilities.xml</DocumentationFile>
   </PropertyGroup>
 
   <ItemGroup>
