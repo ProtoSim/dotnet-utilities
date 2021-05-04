@@ -7,6 +7,14 @@ namespace ProtoSim.DotNetUtilities {
     /// Contains extension methods for the string Type, adding functionality
     /// </summary>
     public static class Strings {
+        public enum EncapsulationType {
+            Default,
+            Parentheses,
+            Carets,
+            Brackets,
+            Braces
+        }
+
         /// <summary>
         /// Checks if <paramref name="emailAddress"/> is a valid email address value
         /// </summary>
@@ -36,15 +44,15 @@ namespace ProtoSim.DotNetUtilities {
         /// </summary>
         /// <remarks>Will return the standard <c>object.ToString()</c> result if unsupported Type</remarks>
         /// <param name="item">The item to convert</param>
-        /// <param name="parenthesesInsteadOfCarets">Use parentheses instead of carets for applicable Types</param>
+        /// <param name="encapsulationCharacters">Custom encapsulation characters to use instead of default</param>
         /// <returns>A <c>string</c> object representing <paramref name="item"/></returns>
-        public static string ToPlainString(this object item, bool parenthesesInsteadOfCarets = false) {
+        public static string ToPlainString(this object item, char[] encapsulationCharacters = null) {
             if (item == null)
                 return null;
 
             if (item is IList) {
                 var itemList = item as IList;
-                var plainString = "[";
+                var plainString = $"{encapsulationCharacters?[0] ?? '['}";
 
                 for (int i = 0; i < itemList.Count; i++) {
                     plainString += itemList[i].ToPlainString();
@@ -53,12 +61,12 @@ namespace ProtoSim.DotNetUtilities {
                         plainString += ",";
                 }
 
-                return plainString + "]";
+                return $"{plainString + (encapsulationCharacters?[1] ?? ']')}";
             }
 
             switch (item) {
                 case Vector3 vector3:
-                    return $"{(parenthesesInsteadOfCarets ? "(" : "<")}{vector3.X},{vector3.Y},{vector3.Z}{(parenthesesInsteadOfCarets ? ")" : ">")}";
+                    return $"{encapsulationCharacters?[0] ?? '<'}{vector3.X},{vector3.Y},{vector3.Z}{encapsulationCharacters?[1] ?? '>'}";
 
                 default:
                     return item.ToString();

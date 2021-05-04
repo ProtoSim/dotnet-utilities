@@ -61,13 +61,13 @@
             <param name="guid">The <c>string</c> value to check</param>
             <returns><c>true</c> if valid or <c>false</c> if invalid</returns>
         </member>
-        <member name="M:ProtoSim.DotNetUtilities.Strings.ToPlainString(System.Object,System.Boolean)">
+        <member name="M:ProtoSim.DotNetUtilities.Strings.ToPlainString(System.Object,System.Char[])">
             <summary>
             Converts the given <paramref name="item"/> to a plain string, taking into account its <c>Type</c>
             </summary>
             <remarks>Will return the standard <c>object.ToString()</c> result if unsupported Type</remarks>
             <param name="item">The item to convert</param>
-            <param name="parenthesesInsteadOfCarets">Use parentheses instead of carets for applicable Types</param>
+            <param name="encapsulationCharacters">Custom encapsulation characters to use instead of default</param>
             <returns>A <c>string</c> object representing <paramref name="item"/></returns>
         </member>
     </members>
