@@ -3,7 +3,7 @@
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-    <Version>0.7.1</Version>
+    <Version>0.7.2</Version>
     <Authors>Sebastian Romanet</Authors>
     <Company>ProtoSim</Company>
     <Product />
@@ -27,12 +27,14 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="LICENSE" />
-    <None Remove="LICENSE" />
+    <PackageReference Include="System.Numerics.Vectors" Version="4.5.0" />
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="System.Numerics.Vectors" Version="4.5.0" />
+    <None Include="LICENSE.txt">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
   </ItemGroup>
 
 </Project>
