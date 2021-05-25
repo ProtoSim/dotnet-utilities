@@ -1,26 +1,19 @@
 ﻿using System.Collections;
+using System.Diagnostics.CodeAnalysis;
 using System.Numerics;
 using System.Text.RegularExpressions;
 
 namespace ProtoSim.DotNetUtilities {
     /// <summary>
-    /// Contains extension methods for the string Type, adding functionality
+    /// Provides extension methods for the string Type, adding functionality
     /// </summary>
     public static class Strings {
-        public enum EncapsulationType {
-            Default,
-            Parentheses,
-            Carets,
-            Brackets,
-            Braces
-        }
-
         /// <summary>
         /// Checks if <paramref name="emailAddress"/> is a valid email address value
         /// </summary>
         /// <param name="emailAddress">The <c>string</c> value to check</param>
         /// <returns><c>true</c> if valid or <c>false</c> if invalid</returns>
-        public static bool IsValidEmailAddress(this string emailAddress) {
+        public static bool IsValidEmailAddress([NotNullWhen(true)] this string? emailAddress) {
             if (string.IsNullOrEmpty(emailAddress))
                 return false;
 
@@ -32,7 +25,7 @@ namespace ProtoSim.DotNetUtilities {
         /// </summary>
         /// <param name="guid">The <c>string</c> value to check</param>
         /// <returns><c>true</c> if valid or <c>false</c> if invalid</returns>
-        public static bool IsValidGuid(this string guid) {
+        public static bool IsValidGuid([NotNullWhen(true)] this string? guid) {
             if (string.IsNullOrEmpty(guid))
                 return false;
 
@@ -46,12 +39,11 @@ namespace ProtoSim.DotNetUtilities {
         /// <param name="item">The item to convert</param>
         /// <param name="encapsulationCharacters">Custom encapsulation characters to use instead of default</param>
         /// <returns>A <c>string</c> object representing <paramref name="item"/></returns>
-        public static string ToPlainString(this object item, char[] encapsulationCharacters = null) {
+        public static string ToPlainString(this object? item, char[]? encapsulationCharacters = null) {
             if (item == null)
-                return null;
+                return string.Empty;
 
-            if (item is IList) {
-                var itemList = item as IList;
+            if (item is IList itemList) {
                 var plainString = $"{encapsulationCharacters?[0] ?? '['}";
 
                 for (int i = 0; i < itemList.Count; i++) {
@@ -64,13 +56,10 @@ namespace ProtoSim.DotNetUtilities {
                 return $"{plainString + (encapsulationCharacters?[1] ?? ']')}";
             }
 
-            switch (item) {
-                case Vector3 vector3:
-                    return $"{encapsulationCharacters?[0] ?? '<'}{vector3.X},{vector3.Y},{vector3.Z}{encapsulationCharacters?[1] ?? '>'}";
-
-                default:
-                    return item.ToString();
-            }
+            return item switch {
+                Vector3 vector3 => $"{encapsulationCharacters?[0] ?? '<'}{vector3.X},{vector3.Y},{vector3.Z}{encapsulationCharacters?[1] ?? '>'}",
+                _ => item.ToString() ?? string.Empty,
+            };
         }
     }
 }

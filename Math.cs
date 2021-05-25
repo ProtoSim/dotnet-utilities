@@ -1,6 +1,6 @@
 ﻿namespace ProtoSim.DotNetUtilities {
     /// <summary>
-    /// Contains extension methods for doing mathematical functions
+    /// Provides extension methods for doing mathematical functions
     /// </summary>
     public static class Math {
         /// <summary>

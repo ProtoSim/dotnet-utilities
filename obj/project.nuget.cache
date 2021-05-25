@@ -1,11 +1,9 @@
 {
   "version": 2,
-  "dgSpecHash": "avdFhE45xFSUW3ovv5ebX76f+U/AKMpsi0wADoVo0KtxWKYaDjYbgPcu5sl+Mv5dMHSAdXHabAaACq+HgPCJgw==",
+  "dgSpecHash": "L6m/NnL4zxXtNxn7bXi0BiJO4Jaja0VXmTDzxw28q+Ww46+pZYztdugd3wMSjV1cM+Im0svfnNoEuB2yO3rCdQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\roman\\source\\repos\\dotnet-utilities\\ProtoSim.DotNetUtilities.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\roman\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
-    "C:\\Users\\roman\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
     "C:\\Users\\roman\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512"
   ],
   "logs": []
