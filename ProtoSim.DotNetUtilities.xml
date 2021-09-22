@@ -6,7 +6,7 @@
     <members>
         <member name="T:ProtoSim.DotNetUtilities.Math">
             <summary>
-            Contains extension methods for doing mathematical functions
+            Provides extension methods for doing mathematical functions
             </summary>
         </member>
         <member name="M:ProtoSim.DotNetUtilities.Math.Map(System.Byte,System.Byte,System.Byte,System.Byte,System.Byte)">
@@ -44,7 +44,7 @@
         </member>
         <member name="T:ProtoSim.DotNetUtilities.Strings">
             <summary>
-            Contains extension methods for the string Type, adding functionality
+            Provides extension methods for the string Type, adding functionality
             </summary>
         </member>
         <member name="M:ProtoSim.DotNetUtilities.Strings.IsValidEmailAddress(System.String)">
@@ -69,6 +69,15 @@
             <param name="item">The item to convert</param>
             <param name="encapsulationCharacters">Custom encapsulation characters to use instead of default</param>
             <returns>A <c>string</c> object representing <paramref name="item"/></returns>
+        </member>
+        <member name="M:ProtoSim.DotNetUtilities.Strings.ToEnum``1(System.String)">
+            <summary>
+            Converts the given <paramref name="enumString"/> to an enum value, taking into account the given <c>Type</c>
+            </summary>
+            <remarks>Will return the standard <c>Enum.Parse()</c> result if safe</remarks>
+            <param name="enumString">The enum string to convert</param>
+            <param name="type">Enum Type to convert to</param>
+            <returns>An <c>enum</c> value representing <paramref name="item"/></returns>
         </member>
     </members>
 </doc>

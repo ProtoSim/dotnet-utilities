@@ -1,6 +1,8 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Diagnostics.CodeAnalysis;
 using System.Numerics;
+using System.Runtime.InteropServices.ComTypes;
 using System.Text.RegularExpressions;
 
 namespace ProtoSim.DotNetUtilities {
@@ -60,6 +62,20 @@ namespace ProtoSim.DotNetUtilities {
                 Vector3 vector3 => $"{encapsulationCharacters?[0] ?? '<'}{vector3.X},{vector3.Y},{vector3.Z}{encapsulationCharacters?[1] ?? '>'}",
                 _ => item.ToString() ?? string.Empty,
             };
+        }
+
+        /// <summary>
+        /// Converts the given <paramref name="enumString"/> to an enum value, taking into account the given <c>Type</c>
+        /// </summary>
+        /// <remarks>Will return the standard <c>Enum.Parse()</c> result if safe</remarks>
+        /// <param name="enumString">The enum string to convert</param>
+        /// <param name="type">Enum Type to convert to</param>
+        /// <returns>An <c>enum</c> value representing <paramref name="item"/></returns>
+        public static T? ToEnum<T>(this string? enumString) where T : Enum {
+            if (string.IsNullOrEmpty(enumString))
+                return default;
+
+            return (T)Enum.Parse(typeof(T), enumString);
         }
     }
 }
