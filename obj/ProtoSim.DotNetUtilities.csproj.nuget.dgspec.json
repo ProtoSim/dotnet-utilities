@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\roman\\source\\repos\\dotnet-utilities\\ProtoSim.DotNetUtilities.csproj": {}
+    "C:\\Users\\roman\\Source\\Repos\\dotnet-utilities\\ProtoSim.DotNetUtilities.csproj": {}
   },
   "projects": {
-    "C:\\Users\\roman\\source\\repos\\dotnet-utilities\\ProtoSim.DotNetUtilities.csproj": {
+    "C:\\Users\\roman\\Source\\Repos\\dotnet-utilities\\ProtoSim.DotNetUtilities.csproj": {
       "version": "0.8.1",
       "restore": {
-        "projectUniqueName": "C:\\Users\\roman\\source\\repos\\dotnet-utilities\\ProtoSim.DotNetUtilities.csproj",
+        "projectUniqueName": "C:\\Users\\roman\\Source\\Repos\\dotnet-utilities\\ProtoSim.DotNetUtilities.csproj",
         "projectName": "ProtoSim.DotNetUtilities",
-        "projectPath": "C:\\Users\\roman\\source\\repos\\dotnet-utilities\\ProtoSim.DotNetUtilities.csproj",
+        "projectPath": "C:\\Users\\roman\\Source\\Repos\\dotnet-utilities\\ProtoSim.DotNetUtilities.csproj",
         "packagesPath": "C:\\Users\\roman\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\roman\\source\\repos\\dotnet-utilities\\obj\\",
+        "outputPath": "C:\\Users\\roman\\Source\\Repos\\dotnet-utilities\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
