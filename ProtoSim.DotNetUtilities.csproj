@@ -3,7 +3,7 @@
   <PropertyGroup>
     <TargetFramework>net5.0</TargetFramework>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-    <Version>0.8.1.0</Version>
+    <Version>0.10.0</Version>
     <Authors>Sebastian Romanet</Authors>
     <Company>ProtoSim</Company>
     <Product />

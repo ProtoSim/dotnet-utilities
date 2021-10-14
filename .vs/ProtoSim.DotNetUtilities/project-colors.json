@@ -1,0 +1,21 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "859b27f5-06fa-4461-95ba-493ad92a734d": {
+      "ProjectGuid": "859b27f5-06fa-4461-95ba-493ad92a734d",
+      "DisplayName": "ProtoSim.DotNetUtilities",
+      "ColorIndex": 0
+    },
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "Miscellaneous Files",
+      "ColorIndex": -1
+    },
+    "233b2fed-f520-44b8-bc0e-48d25630a0db": {
+      "ProjectGuid": "233b2fed-f520-44b8-bc0e-48d25630a0db",
+      "DisplayName": "ConsoleTest",
+      "ColorIndex": 1
+    }
+  },
+  "NextColorIndex": 2
+}

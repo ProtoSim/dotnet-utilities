@@ -73,7 +73,7 @@
     "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
-    "version": "0.8.1",
+    "version": "0.10.0",
     "restore": {
       "projectUniqueName": "C:\\Users\\roman\\source\\repos\\dotnet-utilities\\ProtoSim.DotNetUtilities.csproj",
       "projectName": "ProtoSim.DotNetUtilities",

@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>ProtoSim.DotNetUtilities</id>
+    <version>0.9.0</version>
+    <authors>Sebastian Romanet</authors>
+    <license type="file">LICENSE.txt</license>
+    <licenseUrl>https://aka.ms/deprecateLicenseUrl</licenseUrl>
+    <description>A .NET 5.0 class library that adds some extra utility to .NET</description>
+    <repository type="GitHub" url="https://github.com/ProtoSim/dotnet-utilities" />
+    <dependencies>
+      <group targetFramework="net5.0">
+        <dependency id="System.Numerics.Vectors" version="4.5.0" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="D:\Local\NuGet\net5.0\ProtoSim.DotNetUtilities.dll" target="lib\net5.0\ProtoSim.DotNetUtilities.dll" />
+    <file src="C:\Users\roman\source\repos\dotnet-utilities\LICENSE.txt" target="LICENSE.txt" />
+  </files>
+</package>

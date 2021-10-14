@@ -1,0 +1,12 @@
+D:\Local\NuGet\net5.0\ProtoSim.DotNetUtilities.deps.json
+D:\Local\NuGet\net5.0\ProtoSim.DotNetUtilities.dll
+D:\Local\NuGet\net5.0\ref\ProtoSim.DotNetUtilities.dll
+D:\Local\NuGet\net5.0\ProtoSim.DotNetUtilities.pdb
+C:\Users\roman\source\repos\dotnet-utilities\obj\Debug\net5.0\ProtoSim.DotNetUtilities.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\roman\source\repos\dotnet-utilities\obj\Debug\net5.0\ProtoSim.DotNetUtilities.AssemblyInfoInputs.cache
+C:\Users\roman\source\repos\dotnet-utilities\obj\Debug\net5.0\ProtoSim.DotNetUtilities.AssemblyInfo.cs
+C:\Users\roman\source\repos\dotnet-utilities\obj\Debug\net5.0\ProtoSim.DotNetUtilities.csproj.CoreCompileInputs.cache
+C:\Users\roman\source\repos\dotnet-utilities\obj\Debug\net5.0\ProtoSim.DotNetUtilities.dll
+C:\Users\roman\source\repos\dotnet-utilities\obj\Debug\net5.0\ref\ProtoSim.DotNetUtilities.dll
+C:\Users\roman\source\repos\dotnet-utilities\obj\Debug\net5.0\ProtoSim.DotNetUtilities.pdb
+C:\Users\roman\source\repos\dotnet-utilities\obj\Debug\net5.0\ProtoSim.DotNetUtilities.csproj.AssemblyReference.cache

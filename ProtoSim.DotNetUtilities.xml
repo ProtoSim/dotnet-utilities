@@ -79,5 +79,16 @@
             <param name="type">Enum Type to convert to</param>
             <returns>An <c>enum</c> value representing <paramref name="item"/></returns>
         </member>
+        <member name="T:ProtoSim.DotNetUtilities.Timer">
+            <summary>
+            Provides extension methods for the <see cref="T:System.Timers.Timer"/> Type, adding functionality.
+            </summary>
+        </member>
+        <member name="M:ProtoSim.DotNetUtilities.Timer.Restart(System.Timers.Timer)">
+            <summary>
+            Restarts the given <paramref name="timer"/>.
+            </summary>
+            <remarks>Calls the <c>Stop()</c> and <c>Start()</c> methods on the <see cref="T:System.Timers.Timer"/>.</remarks>
+        </member>
     </members>
 </doc>
