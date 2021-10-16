@@ -853,19 +853,12 @@ namespace ProtoSim.DotNetUtilities.Net {
         protected virtual void Dispose(bool disposing) {
             if (!disposedValue) {
                 if (disposing) {
-                    // dispose managed state (managed objects)
                     _client.Dispose();
                 }
-                // free unmanaged resources (unmanaged objects) and override finalizer
-                // set large fields to null
+
                 disposedValue = true;
             }
         }
-
-        // // override finalizer only if 'Dispose(bool disposing)' has code to free unmanaged resources
-        // ~Http() {
-        //     Dispose(disposing: false);
-        // }
 
         public void Dispose() {
             Dispose(disposing: true);

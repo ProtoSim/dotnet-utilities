@@ -1,9 +1,0 @@
-D:\Local\NuGet\netstandard2.1\ProtoSim.DotNetUtilities.deps.json
-D:\Local\NuGet\netstandard2.1\ProtoSim.DotNetUtilities.dll
-D:\Local\NuGet\netstandard2.1\ProtoSim.DotNetUtilities.pdb
-C:\Users\roman\source\repos\dotnet-utilities\obj\Release\netstandard2.1\ProtoSim.DotNetUtilities.csprojAssemblyReference.cache
-C:\Users\roman\source\repos\dotnet-utilities\obj\Release\netstandard2.1\ProtoSim.DotNetUtilities.AssemblyInfoInputs.cache
-C:\Users\roman\source\repos\dotnet-utilities\obj\Release\netstandard2.1\ProtoSim.DotNetUtilities.AssemblyInfo.cs
-C:\Users\roman\source\repos\dotnet-utilities\obj\Release\netstandard2.1\ProtoSim.DotNetUtilities.csproj.CoreCompileInputs.cache
-C:\Users\roman\source\repos\dotnet-utilities\obj\Release\netstandard2.1\ProtoSim.DotNetUtilities.dll
-C:\Users\roman\source\repos\dotnet-utilities\obj\Release\netstandard2.1\ProtoSim.DotNetUtilities.pdb
