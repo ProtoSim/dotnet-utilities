@@ -15,7 +15,12 @@
       "ProjectGuid": "233b2fed-f520-44b8-bc0e-48d25630a0db",
       "DisplayName": "ConsoleTest",
       "ColorIndex": 1
+    },
+    "ba1be843-5585-45dc-8ffc-42fa56c67a77": {
+      "ProjectGuid": "ba1be843-5585-45dc-8ffc-42fa56c67a77",
+      "DisplayName": "ConsoleTest",
+      "ColorIndex": 2
     }
   },
-  "NextColorIndex": 2
+  "NextColorIndex": 3
 }

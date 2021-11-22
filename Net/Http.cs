@@ -59,7 +59,7 @@ namespace ProtoSim.DotNetUtilities.Net {
             }
 
             if (!response.IsSuccessStatusCode)
-                Debug.WriteLine($"{request.Method} {request.RequestUri} returned unsuccessfully: ({(int)response.StatusCode}) {response.ReasonPhrase}", "Error");
+                Debug.WriteLine($"{request.Method} {request.RequestUri} returned unsuccessfully: ({(int)response.StatusCode}) {response.ReasonPhrase}\n{await response.Content.ReadAsStringAsync()}", "Error");
 
             return (response.IsSuccessStatusCode, response);
         }
@@ -79,7 +79,7 @@ namespace ProtoSim.DotNetUtilities.Net {
             }
 
             if (!response.IsSuccessStatusCode)
-                Debug.WriteLine($"{request.Method} {request.RequestUri} returned unsuccessfully: ({(int)response.StatusCode}) {response.ReasonPhrase}", "Error");
+                Debug.WriteLine($"{request.Method} {request.RequestUri} returned unsuccessfully: ({(int)response.StatusCode}) {response.ReasonPhrase}\n{response.Content.ReadAsStringAsync()}", "Error");
 
             return (response.IsSuccessStatusCode, response);
         }
@@ -164,9 +164,9 @@ namespace ProtoSim.DotNetUtilities.Net {
 
             if (!success) {
                 if (response == null)
-                    Debug.WriteLine($"{request.Method} {request.RequestUri} returned unsuccessfully");
+                    Debug.WriteLine($"{request.Method} {request.RequestUri} returned unsuccessfully", "Error");
                 else
-                    Debug.WriteLine($"{request.Method} {request.RequestUri} returned unsuccessfully: ({(int)response.StatusCode}) {response.ReasonPhrase}");
+                    Debug.WriteLine($"{request.Method} {request.RequestUri} returned unsuccessfully: ({(int)response.StatusCode}) {response.ReasonPhrase}\n{await response.Content.ReadAsStringAsync()}", "Error");
             
                 return default;
             }
@@ -189,9 +189,9 @@ namespace ProtoSim.DotNetUtilities.Net {
 
             if (!success) {
                 if (response == null)
-                    Debug.WriteLine($"{request.Method} {request.RequestUri} returned unsuccessfully");
+                    Debug.WriteLine($"{request.Method} {request.RequestUri} returned unsuccessfully", "Error");
                 else
-                    Debug.WriteLine($"{request.Method} {request.RequestUri} returned unsuccessfully: ({(int)response.StatusCode}) {response.ReasonPhrase}");
+                    Debug.WriteLine($"{request.Method} {request.RequestUri} returned unsuccessfully: ({(int)response.StatusCode}) {response.ReasonPhrase}\n{response.Content.ReadAsStringAsync()}", "Error");
 
                 return default;
             }
@@ -284,9 +284,9 @@ namespace ProtoSim.DotNetUtilities.Net {
 
             if (!success) {
                 if (response == null)
-                    Debug.WriteLine($"{request.Method} {request.RequestUri} returned unsuccessfully");
+                    Debug.WriteLine($"{request.Method} {request.RequestUri} returned unsuccessfully", "Error");
                 else
-                    Debug.WriteLine($"{request.Method} {request.RequestUri} returned unsuccessfully: {response}");
+                    Debug.WriteLine($"{request.Method} {request.RequestUri} returned unsuccessfully: {response}", "Error");
 
                 return default;
             }
@@ -309,9 +309,9 @@ namespace ProtoSim.DotNetUtilities.Net {
 
             if (!success) {
                 if (response == null)
-                    Debug.WriteLine($"{request.Method} {request.RequestUri} returned unsuccessfully");
+                    Debug.WriteLine($"{request.Method} {request.RequestUri} returned unsuccessfully", "Error");
                 else
-                    Debug.WriteLine($"{request.Method} {request.RequestUri} returned unsuccessfully: {response}");
+                    Debug.WriteLine($"{request.Method} {request.RequestUri} returned unsuccessfully: {response}", "Error");
 
                 return default;
             }
